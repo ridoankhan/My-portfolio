@@ -4,8 +4,12 @@ $(function() {
         $('.theme-options').toggleClass('active');
     });
     $('#anim-type').on('change', function() {
+        
         $html = $('html');
+        
+        
         var animNum = $(this).val();
+       
         if(animNum >= 0 &&  animNum <= 36 ) {
             if( animNum == 0 ) {
                 $html.data('random-animation', true);
@@ -14,6 +18,8 @@ $(function() {
                 $html.data('random-animation', false);
             }
         }
+
+        
     });
 
     $('.theme-color li a').on('click', function(e) {
