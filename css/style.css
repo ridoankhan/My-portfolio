@@ -480,8 +480,9 @@ section {
 
 .hero-photo img {
   width: 100%;
-  aspect-ratio: 1 / 1.05;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .hero-badge {
